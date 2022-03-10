@@ -1,0 +1,143 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #edf2f7;
+    padding: 0;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: #31353D;
+}
+
+.sidebar a {
+    color: #818896;
+    text-decoration: none;
+}
+
+.sidebar .sidebar-brand {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid #3a3f48;
+    margin-bottom: 5px;
+}
+
+.sidebar .sidebar-brand > a {
+    text-transform: uppercase;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .sidebar-menu ul li.active {
+    background-color: #636a75;
+}
+
+.sidebar .sidebar-menu ul li.active a {
+    color: #fffffb;
+}
+
+.sidebar .sidebar-menu ul li:hover {
+    background-color: #3a3f48;
+}
+
+.sidebar .sidebar-menu ul li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    position: relative;
+    padding: 12px 30px 12px 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main {
+    position: relative;
+    width: calc(100% - 300px);
+    background-color: white;
+    padding: 20px;
+    left: 300px;
+}
+
+.field {
+    width: 100%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.field label {
+    width: 100%;
+    margin-bottom: 2px;
+    display: block;
+}
+
+.field input {
+    width: calc(100% - 20px);
+    height: 30px;
+    padding: 0 10px;
+}
+
+.text-end {
+    text-align: end;
+}
+
+button {
+    height: 30px;
+}
+
+.float-end {
+    float: right;
+}
+
+.alert-danger {
+    padding: 5px;
+    color: red;
+    display: none;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    border-bottom: 1px solid #f2f2f2;
+    width: 600px;
+}
+
+.row .label {
+    width: 35%;
+}
+
+.row .value {
+    width: 65%;
+}
